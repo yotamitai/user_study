@@ -1,0 +1,157 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Consent timing_First Click,Consent timing_Last Click,Consent timing_Page Submit,Consent timing_Click Count,Consent,prolific_id,Introduction timing_First Click,Introduction timing_Last Click,Introduction timing_Page Submit,Introduction timing_Click Count,Highway quiz,training AI quiz,Q258,state dropdown_1,state dropdown_2,query quiz 1,query quiz 2,restrictions,constraint dropdown_1,constraint dropdown_2,constraint dropdown_3,constraint q1,constraint q2,Q215,Task,Q216,bonus,M2Q desc,M2Q q1 vid,M2Q q1,M2Q q2 vid,M2Q q2,T2Q desc,T2Q q1,T2Q q2,Q2T desc,Q2T q1,Q2T q2,Q257,convenient system,clear movies,Q253,feedback expressive,add dropdowns,Q252,feedback improvment,effectiveness_1,effectiveness_2,effectiveness_3,effectiveness_4,efficiency_1,efficiency_2,efficiency_3,efficiency_4,efficiency_5,satisfaction_1,satisfaction_2,Demographics timing_First Click,Demographics timing_Last Click,Demographics timing_Page Submit,Demographics timing_Click Count,age,gender,gender_3_TEXT,country,country_3_TEXT,education,education_6_TEXT,english,tech-savvy,ai,comments,Q261,Random_ID,Q_TotalDuration
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"Dear participant,
+
+ 
+
+Thank you for participating in this study. It will include some questions about yourself followed by decision making tasks.
+
+Please make sure to use the Chrome browser on a PC or laptop (Not through your mobile device).
+
+ 
+
+Estimated study time: 20 minutes.
+Your responses are confidential and anonymous. We do not ask for your name or other identifying information. Whatever information you convey in this study cannot be traced back to you.
+
+
+
+Please read all the instructions and information very carefully. This study is very important for us. 
+
+You can receive a bonus of up to 60 pence for providing high quality answers.
+
+If you have any questions you may contact Yotam Amitai: yotama@campus.technion.ac.il
+ 
+
+We appreciate your cooperation!
+
+
+
+Notice: After choosing one of the options below, click on the blue arrow at the bottom right side of the screen.",Please record your participant ID in prolific academic:,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Quiz: Which car does the agent control?,"Quiz:
+Check ALL that apply: What can we learn from the above video?","Additional clarifications
+
+1) Lanes are numbered from top to bottom (i.e. lane 1 is always the topmost lane.)
+
+
+
+
+2) Positions above/below refer to all lanes between the agent and the other car.
+
+Example: Agent (Lane 4) below car (Lane 1)
+
+
+
+
+
+3) Positions behind/In front of refer to a set distance between the agent and the other car:
+
+Example: In front of
+
+
+
+Not in front of:","Example of frame description using dropdowns:
+Note: when specifying the ""End Frame"" another ""Position = Collision"" is also available. - Position","Example of frame description using dropdowns:
+Note: when specifying the ""End Frame"" another ""Position = Collision"" is also available. - Lane","Quiz: 
+Check ALL that apply: Which of the following is a valid frame specification?","The specification ""Position: In front of"" refers to:","Restrictions on the behavior of the agent in the video can also be added.
+
+
+
+This is done by applying constraints on the elements of the frames.
+
+For example:
+
+
+	The agent stays behind another vehicle.
+
+	(the Position element is constrained to stay constant the same)  
+	The agent changes lanes. 
+
+	(the Lane element is constrained to change during the video)
+	The agent changes from lane 1 to lane 3. 
+
+	(the Lane element is constrained to change into a specific Lane element)
+
+
+
+
+It might be convenient to think of a question picturistically:",Example of constraint description using dropdowns: - Element 1,Example of constraint description using dropdowns: - Constraint,Example of constraint description using dropdowns: - Element 2,"Quiz: The constraint ""Changes into"" requires:
+
+**Element type = Position or Lane","Select ALL that applies to the constraint ""Changes"":","Important: unlike a frame from the game (that depicts the complete picture) , there can be many different frames that fit a single drop-down description.
+
+For example, in both game frames below, the agent is in lane 4, meaning that choosing the Lane 4 drop-down option can have multiple occurrences.","Task
+
+In the next section you will be asked questions about how the system works to test your understanding.
+
+These questions will grant a bonus if answered correctly.
+
+ 
+Before continuing, you will first need to experiment with the system to understand its capabilities.
+
+Try to understand which questions you can ask, and to understand the system's logic: how does it respond to your example specification?
+
+This will be helpful for the next part of the experiment.
+
+
+
+Remember:
+
+1) Not specifying a ""Lane"" or ""Position"" means that any of them is possible.
+
+2) Training isn't perfect and the videos are based on previous interactions of the agent.
+
+This means that some specifications might be valid, but will not find relevant video. 
+
+
+
+To check out the system, follow this link: interviewai.iem.technion.ac.il.
+
+Your user ID is [Field-Random_ID]
+
+Make sure to use it when specifying the frames and constraints.
+
+
+When finished, navigate to the ""Done"" page in the top bar of the system.",To progress please provide the code you received from the system that indicates you have experimented a sufficient amount:,The next sections will test your understanding of the system.You will get a bonus for every correct answer!,"From movies to specifications
+
+ 
+
+Observe the movie and select the possible specification to generate it.",Question 1 - Movie:,Select possible specification: (Only 1 is valid),Question 2 - Movie:,Select possible specification: (Only 1 is valid),"From free text to specification
+Read the following text descriptions of desired system examples and select the specification that correctly generates this movie.","Description 1:
+We suspect that training is not sufficient when entering and exiting a middle lane.
+We want to see the agent starting from lane 2, moving to a different lane, and returning to lane 2.","Description 2:
+We observe odd behavior when there are changes in front of the agent. We want to see how the agent behaves when it drives behind a car and that car moves to a different lane or increases the distance between them significantly. (i.e. our agent does not change lanes.)","Specification to free text
+
+ 
+
+Observe the given specification and select the most detailed valid textual description.",Specification 1:,Specification 2:,"FeedbackWe now ask you to elaborate on your experience using the system we created.
+Note:The system is the tool you used to specify the videos you wanted to see of the agent.The system is not the agent itself and its ability to drive in the highway.","General usability:
+
+Is the system convenient?",Is it clear which movies the system will produce?,"Did you find certain clips more informative than others when evaluating the agent?
+Which clips are most informative? (Please provide several examples)","Expressivity:
+
+Are there questions that you can't ask and want to? 
+
+Are there frames that you can not describe?",What would you add to the frame-specification or to the constraint dropdown?,Please write queries in plain English for any videos that you would like to see the agent performing. This can be expressible using our system or not. (Please provide several examples),"Improvement:
+
+Do you have suggestions on how to improve the system?","Using the system:
+Answer the following questions based on your opinion on the effectiveness of the system. - I found that the system worked well. (did what It was meant to do)","Using the system:
+Answer the following questions based on your opinion on the effectiveness of the system. - I found the videos generated by the system to be compatible with the specifications I chose.","Using the system:
+Answer the following questions based on your opinion on the effectiveness of the system. - I found the videos generated by the system helpful in better understanding how the agent behaves on the road.","Using the system:
+Answer the following questions based on your opinion on the effectiveness of the system. - I found it easy to specify the agent's behavior I wanted to see using the system.",Answer the following questions based on your opinion on the efficiency of the system. - I thought the system was easy to use.,Answer the following questions based on your opinion on the efficiency of the system. - I found the system unnecessarily complex.,Answer the following questions based on your opinion on the efficiency of the system. - I think that I would need the support of a technical person to be able to use this system.,Answer the following questions based on your opinion on the efficiency of the system. - I would imagine that most people would learn to use this system very quickly.,Answer the following questions based on your opinion on the efficiency of the system. - I needed to learn a lot of things before I could get going with this system.,Answer the following questions based on your satisfaction with the system. - I found the system to be very inconvenient.,Answer the following questions based on your satisfaction with the system. - I felt very confident using the system.,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Age:,Gender identity: - Selected Choice,Gender identity: - Other - Text,In which country do you reside? - Selected Choice,In which country do you reside? - Other - Text,Years of education: - Selected Choice,Years of education: - Other: - Text,How proficient are you regarding subjects related to this study: - How proficient are you in English?,How proficient are you regarding subjects related to this study: - How tech-savvy are you?,How familiar are you with Artificial Intelligence?,"Thank you for your participation.
+Please share any thoughts or comments about this study in the space below.",Click the next button to complete the survey.,Random_ID,Q_TotalDuration
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID11_FIRST_CLICK""}","{""ImportId"":""QID11_LAST_CLICK""}","{""ImportId"":""QID11_PAGE_SUBMIT""}","{""ImportId"":""QID11_CLICK_COUNT""}","{""ImportId"":""QID3""}","{""ImportId"":""QID393_TEXT""}","{""ImportId"":""QID17_FIRST_CLICK""}","{""ImportId"":""QID17_LAST_CLICK""}","{""ImportId"":""QID17_PAGE_SUBMIT""}","{""ImportId"":""QID17_CLICK_COUNT""}","{""ImportId"":""QID360""}","{""ImportId"":""QID361""}","{""ImportId"":""QID389""}","{""ImportId"":""QID344_2""}","{""ImportId"":""QID344_3""}","{""ImportId"":""QID362""}","{""ImportId"":""QID363""}","{""ImportId"":""QID343""}","{""ImportId"":""QID345_2""}","{""ImportId"":""QID345_3""}","{""ImportId"":""QID345_7""}","{""ImportId"":""QID364""}","{""ImportId"":""QID365""}","{""ImportId"":""QID346""}","{""ImportId"":""QID308""}","{""ImportId"":""QID347_TEXT""}","{""ImportId"":""QID340""}","{""ImportId"":""QID357""}","{""ImportId"":""QID341""}","{""ImportId"":""QID355""}","{""ImportId"":""QID367""}","{""ImportId"":""QID368""}","{""ImportId"":""QID348""}","{""ImportId"":""QID359""}","{""ImportId"":""QID375""}","{""ImportId"":""QID342""}","{""ImportId"":""QID358""}","{""ImportId"":""QID376""}","{""ImportId"":""QID388""}","{""ImportId"":""QID378_TEXT""}","{""ImportId"":""QID379_TEXT""}","{""ImportId"":""QID384_TEXT""}","{""ImportId"":""QID339_TEXT""}","{""ImportId"":""QID380_TEXT""}","{""ImportId"":""QID383_TEXT""}","{""ImportId"":""QID338_TEXT""}","{""ImportId"":""QID372_13""}","{""ImportId"":""QID372_4""}","{""ImportId"":""QID372_19""}","{""ImportId"":""QID372_12""}","{""ImportId"":""QID373_19""}","{""ImportId"":""QID373_5""}","{""ImportId"":""QID373_12""}","{""ImportId"":""QID373_15""}","{""ImportId"":""QID373_18""}","{""ImportId"":""QID374_16""}","{""ImportId"":""QID374_17""}","{""ImportId"":""QID12_FIRST_CLICK""}","{""ImportId"":""QID12_LAST_CLICK""}","{""ImportId"":""QID12_PAGE_SUBMIT""}","{""ImportId"":""QID12_CLICK_COUNT""}","{""ImportId"":""QID5_TEXT""}","{""ImportId"":""QID6""}","{""ImportId"":""QID6_6_TEXT""}","{""ImportId"":""QID281""}","{""ImportId"":""QID281_3_TEXT""}","{""ImportId"":""QID7""}","{""ImportId"":""QID7_6_TEXT""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID16""}","{""ImportId"":""QID10_TEXT""}","{""ImportId"":""QID392""}","{""ImportId"":""Random_ID""}","{""ImportId"":""Q_TotalDuration""}"
+2022-02-28 03:52:43,2022-02-28 04:08:23,0,82.11.175.107,100,939,1,2022-02-28 04:08:23,R_STYt1jqwlq97V0R,,,,,50.8450927734375,-0.938995361328125,anonymous,EN,2.359,36.943,37.882,2,1,5e5b7d7b1977823677ebc5ae,0,0,10.567,0,2,"1,2",,,,"1,13,10",2,,,,,5,"4,2",,,895122530,,,,1,,2,,4,2,,2,4,,No I didn't think so,Kind of clear but it's a bit random,the clips where the agent changed lanes were more informatiive,No I don't think I have any questions,"nothing, it's all there",I would like to see what happens when the car in front of the Agent has to do an emergency stop or crashes into the car in front of it,"no, not really",6,6,6,7,2,6,7,2,7,6,1,1.343,17.948,19.104,8,49,1,,2,,2,,7,4,2,,,9633644417,939
+2022-02-28 04:03:36,2022-02-28 04:21:20,0,82.36.178.100,100,1063,1,2022-02-28 04:21:20,R_3Jgb0xPoDWK63FK,,,,,54.9734954833984375,-1.5673065185546875,anonymous,EN,6.567,6.567,10.822,1,1,5f24348aaf4d9b0144933300,13.916,14.98,17.079,2,2,"1,2",,13,6,"1,13,10",2,,13,41,63,5,"4,2",,,895122530,,,,1,,3,,4,2,,3,3,,way too complicated,no,no all were equally confusing,"probably all of them
+i dont understand the constant thing",make it clearer,change from lane 1 to lane 2,make it more user friendly,1,1,1,1,1,7,7,1,7,7,1,2.186,23.032,24.277,10,23,1,,2,,3,,7,4,2,,,9797048804,1063
+2022-02-28 03:59:30,2022-02-28 04:24:15,0,58.105.88.165,100,1484,1,2022-02-28 04:24:17,R_1jQb6GAvivjOpai,,,,,-37.881195068359375,145.16558837890625,anonymous,EN,10.639,10.639,12.093,1,1,5f07267fa81c732d460fc24e,0,0,12.305,0,2,"1,2",,19,5,"1,13,10",2,,4,41,44,5,"4,2",,,895122530,,,,1,,3,,4,2,,2,4,,the commands were straightforward after the initial explanation and a few practice inputs,"when inputting simple commands, the movie produced is easily understood. when i intentionally put unusual and/or strict commands it did not find examples",n/a,n/a,"between
+merge
+","reacting to changes in lane availability (road works, other collisions)
+managing speed increases of cars behind the agent (address tailgateing)",n/a,6,2,4,5,6,3,3,6,6,2,5,1.17,23.498,24.979,9,24,0,,3,Australia,3,,6,4,2,,,5962239710,1484
+2022-02-28 03:54:18,2022-02-28 04:25:32,0,86.182.182.160,100,1874,1,2022-02-28 04:25:34,R_10T9M4yt9O1vmfW,,,,,53.9275054931640625,-3.0052947998046875,anonymous,EN,5.073,5.073,10.504,1,1,5d174a5cf0b3c1001a263bab,0,0,18.05,0,2,"1,2",,13,3,"1,13,10",2,,1,2,3,5,"4,2",,,895122530,,,,1,,4,,4,1,,2,4,,I think the system is convenient and quite simple to use.,Yes,"I found them pretty similar, all giving a sense of understanding of what the agent would do",No,I don't think I would add anything,The agent going back and forth a bit more,No,6,5,6,6,6,3,2,5,3,2,5,1.517,34.348,37.297,7,24,1,,2,,2,,7,6,3,,,8381051606,1874
+2022-02-28 04:03:24,2022-02-28 04:36:55,0,2.222.255.113,100,2010,1,2022-02-28 04:36:55,R_1ritQwivXtOwINi,,,,,52.414093017578125,-0.5216064453125,anonymous,EN,8.516,8.516,10.193,1,1,5eac671f0658ac0ea6c730d2,0,0,37.393,0,2,"1,2",,13,4,"1,13,10",2,,1,41,44,5,"4,2",,,895122530,,,,1,,4,,4,1,,2,4,,Could be made easier,Yes,"Lane changes.
+Speed changes 
+",No,None,I would like to see all lanes with traffic ahead.,None,5,5,4,5,5,5,2,5,2,4,6,1.328,40.016,41.576,7,44,0,,2,,2,,7,7,5,,,5514057845,2010
+2022-02-28 04:00:30,2022-02-28 04:39:01,0,2.127.231.240,100,2310,1,2022-02-28 04:39:02,R_2B33K40h0zYxhzc,,,,,53.8260955810546875,-1.88470458984375,anonymous,EN,6.197,6.197,8.246,1,1,5bfd2d6b8acfed00011a5c89,0,0,23.285,0,2,"1,2",,1,,"1,13,10",2,,1,41,44,5,"4,2",,,895122530,,,,1,,3,,4,1,,2,4,,"The system is good but it is difficult to understand at first. It becomes easier the longer you work through and learn it. ",Yes these seem to become clearer the longer I use the system.,The clips showing cars moving across several lanes are most useful as there is the potential for more to happen. So for example showing a car moving from Lane 1 to Lane 3 is more useful than simply moving from Lane 1 to Lane 2.,No,Nothing comes to mind,"I would like to see an agent move from behind in Lane 1 go to Lane 4 and return to Lane 1 in front. ",No,6,6,6,4,3,4,4,3,4,5,3,1.413,19.865,22.061,7,44,0,,2,,3,,7,5,2,,,7378142246,2310
+2022-02-28 03:59:05,2022-02-28 04:43:12,0,117.20.69.0,100,2647,1,2022-02-28 04:43:13,R_2vk89E8uh18B4nc,,,,,-27.4678955078125,153.032501220703125,anonymous,EN,4.846,4.846,8.398,1,1,5dee32d84378274d09c2ed2d,0,0,19.288,0,2,"1,2",,19,5,"1,13,10",2,,13,25,3,5,"4,2",,,895122530,,,,1,,3,,4,2,,2,4,,"Yes but I found it hard to understand the second limitations section, and when using it struggled to get video outcomes.",Yes when i could create ones that had outcomes,"Yes, ones with changing lanes and positions. usually when  changing from lane 1 to 4 for example. and going from above to behind. Very specific situations with outcomes really helped show how to use the system. ",What would happen if agent went from above lane 2 went behind lane 3 and back.,"Ability to return to original position
+Between","Behind land 2, in front lane 3, behind lane 1.
+Above lane 2, behind lane 2, in front of lane 2","it crashes sometimes, and tends to time out, so just stopping that",3,5,7,2,2,5,5,1,5,5,2,1.479,33.146,34.969,8,22,1,,3,Australia,3,,6,4,3,"Overall I just had trouble with the site off of prolific. The study itself was interesting and I liked. ",,8510869047,2647
+2022-02-28 04:24:19,2022-02-28 04:43:49,0,86.134.121.247,100,1169,1,2022-02-28 04:43:49,R_27jQLnYBY6HU6bE,,,,,53.3354949951171875,-1.9315032958984375,anonymous,EN,5.085,5.085,7.88,1,1,5f3ebe53b9a7b3150f539bde,14.185,14.185,14.533,1,2,"1,2",,7,3,"1,13,10",2,,,,,5,"4,2",,,895122530,,,,1,,2,,4,1,,2,4,,"yes, easy to use.",After studying it for a while it was easy to figure out.,n/a,n/a,n/a,How the car would react to an emergency vehicle wanting to come through,n/a,7,7,3,7,7,2,2,7,5,2,4,1.271,16.073,17.11,8,35,1,,2,,2,,7,5,3,,,5159464526,1169
+2022-02-28 04:23:53,2022-02-28 04:45:10,0,2.217.152.214,100,1276,1,2022-02-28 04:45:10,R_1CCkhLf085D8o6d,,,,,52.64129638671875,1.219696044921875,anonymous,EN,2.769,2.769,3.996,1,1,6147c5874b61952e42e9b2bd,0,0,9.957,0,2,"1,2",,,,"1,13,10",2,,,,,5,"4,2",,,895122530,,,,1,,4,,4,4,,2,4,,Yes it worked well and most of the constraints worked correctly,Yes,"Yes clips which were more specific and with more constraints applied tended to provide better information. Such as a collision when moving through the lanes, or a changes into parameter. Also making sure the agent isn't travelling in a straight line helped","Yes sometimes there were overcomplications which made it hard for me to determine which move the agent was going to make. ",I would add a becomes option which makes the agent morph into another agent,I would like the agent to be able to morph into another agent. I would like the agent to be able to brake. I would like the agent to be able to slow down. I would like the agent to be able to reverse direction,"Yes I would make the videos load better as sometimes I would enter a combination and it would say I was correct. However, no videos would load",5,4,4,4,5,3,3,4,3,3,5,1.047,12.013,13.386,7,25,0,,2,,3,,6,6,4,,,5943595459,1276
+2022-02-28 04:29:08,2022-02-28 04:54:20,0,146.200.95.62,100,1511,1,2022-02-28 04:54:21,R_OpVqLsuoj3379kt,,,,,52.460601806640625,-1.923797607421875,anonymous,EN,11.775,11.775,12.681,1,1,6102c8df44596782a4b121df,0,0,19.343,0,2,"1,2",,13,4,"1,13,10",2,,13,25,,5,"4,2",,,895122530,,,,1,,3,,4,1,,2,4,,Mostly. Some of the explanations were a bit confusing but when playing with the system it became easier to understand. I had difficult finding examples of the car colliding with another during my experimentation stage.,Once you have got your head around it. I think that the hardest part was working out how the two sections worked together to create the video.,Most informative are when things go wrong and end in a collision because then you can understand what went wrong and what training the car needs. If a car is successfully avoiding other cars then it suggests that I would want to train the AI in a different scenario.,Not that I can think of because the constraints seem to take care of that.,"Possibly distance so if the car is close to another or distant and whether that remains the same or changes (decreases or increases). This could be distance above; distance ahead; distance behind etc and then simple word choices such as near, far etc","I would want to see the car change lanes going from in front at a distance to in front close to see how the car reacts to another car approaching at speed. Also, the reverse so the car starting at distance behind and ending in either collision or close behind - does the car react and slow down?",Not really. The interface seems clear and easy once you get used to it. Maybe make it prettier.,6,5,5,6,5,3,1,5,6,2,5,1.802,20.335,22.537,7,39,0,,2,,3,,7,6,3,NA,,3769877068,1511

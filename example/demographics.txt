@@ -1,0 +1,38 @@
+DEMOGRAPHICS:
+Duration (in seconds)
+	AVG: 1998.3, STD: 771.0278920093684
+
+Age:
+	AVG: 34.7, STD: 11.282389272326482
+
+Gender identity: - Selected Choice
+	F: 20
+	M: 20
+	
+In which country do you reside? - Selected Choice
+	UK: 23
+	Other: 14
+	US: 3
+	
+Years of education: - Selected Choice
+	BSc: 24
+	8-12: 13
+	MSc: 2
+	Other: 1
+	
+How proficient are you regarding subjects related to this study: - How proficient are you in English?
+	Superbly: 31
+	6: 9
+	
+How proficient are you regarding subjects related to this study: - How tech-savvy are you?
+	5: 14
+	6: 12
+	so-so: 11
+	Superbly: 3
+	
+How familiar are you with Artificial Intelligence?
+	interested: 27
+	heard: 8
+	course: 3
+	work: 2
+	
